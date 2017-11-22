@@ -168,5 +168,13 @@ united_kingdom.push(northern_ireland)
 p united_kingdom
 
 # 3. Use a loop to print the names of all the countries in the UK.
+for country in united_kingdom
+  p country[:name]
+end
 
 # 4. Use a loop to find the total population of the UK.
+population = 0
+for country in united_kingdom
+  population += country[:population]
+end
+p "The population of the United Kingdom is: #{population}"
