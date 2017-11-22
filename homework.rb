@@ -102,12 +102,34 @@ smallest_fav_num = users["Erik"][:favourite_numbers].min()
 p "The smallest of Erik's favourite numbers is: #{smallest_fav_num}"
 
 # 6. Add the number `7` to Erik's favourite numbers
+users["Erik"][:favourite_numbers].push(7)
+p "Erik's favourite numbers are: #{fav_numbers}"
 
 # 7. Change Erik's hometown to Edinburgh
+users["Erik"][:home_town] = "Edinburgh"
+hometown = users["Erik"][:home_town]
+p "Erik's hometown is: #{hometown}"
 
 # 8. Add a pet dog to Erik called "Fluffy"
+users["Erik"][:pets]["Fuffly"] = :dog
+pets = users["Erik"][:pets]
+p "Erik's pets are: #{pets}"
 
 # 9. Add yourself to the users hash
+users.update("Dave" => {
+  :twitter => "davey_ellis",
+  :favourite_numbers => [7, 14,],
+  :home_town => "Aberdeen",
+  :pets => {
+    "Millie" => :dog,
+    "Ruby" => :cat,
+    "Max" => :cat,
+    6 => :chickens
+  }
+}
+)
+
+p users
 
 
 
