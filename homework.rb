@@ -30,8 +30,12 @@ stops.delete_at(2)
 p stops
 
 # 7. How many stops there are in the array?
+number_of_stops = stops.count()
+p "The current number of stops is: #{number_of_stops}"
 
 # 8. How many ways can we return `"Falkirk High"` from the array?
+p stops[2]
+p stops[-5]
 
 # 9. Reverse the positions of the stops in the array
 
