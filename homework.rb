@@ -22,8 +22,12 @@ index_position = stops.index("Linlithgow")
 p "The index position of Linlithgow is #{index_position}"
 
 # 5. Remove `"Livingston"` from the array using its name
+stops.delete("Livingston")
+p stops
 
 # 6. Delete `"Cumbernauld"` from the array by index
+stops.delete_at(2)
+p stops
 
 # 7. How many stops there are in the array?
 
