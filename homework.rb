@@ -82,14 +82,24 @@ end
   }
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+twitter_handle = users["Jonathan"][:twitter]
+p "Jonathan's twitter handle is: #{twitter_handle}"
 
 # 2. Get Erik's hometown
+hometown = users["Erik"][:home_town]
+p "Erik's hometown is: #{hometown}"
 
 # 3. Get the array of Erik's favourite numbers
+fav_numbers = users["Erik"][:favourite_numbers]
+p "Erik's favourite numbers are: #{fav_numbers}"
 
 # 4. Get the type of Avril's pet Colin
+pet_type = users["Avril"][:pets]["colin"]
+p "Avril's pet colin is a #{pet_type}"
 
 # 5. Get the smallest of Erik's favourite numbers
+smallest_fav_num = users["Erik"][:favourite_numbers].min()
+p "The smallest of Erik's favourite numbers is: #{smallest_fav_num}"
 
 # 6. Add the number `7` to Erik's favourite numbers
 
