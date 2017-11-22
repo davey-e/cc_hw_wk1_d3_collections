@@ -18,6 +18,8 @@ stops.insert(4,"Polmont")
 p stops
 
 # 4. Work out the index position of `"Linlithgow"`
+index_position = stops.index("Linlithgow")
+p "The index position of Linlithgow is #{index_position}"
 
 # 5. Remove `"Livingston"` from the array using its name
 
