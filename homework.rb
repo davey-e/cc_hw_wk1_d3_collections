@@ -36,6 +36,10 @@ p "The current number of stops is: #{number_of_stops}"
 # 8. How many ways can we return `"Falkirk High"` from the array?
 p stops[2]
 p stops[-5]
+p stops.fetch(2) #From homework review
+p stops.slice(2) #From homework review
+p stops.at(2) #From homework review
+
 
 # 9. Reverse the positions of the stops in the array
 stops.reverse!
@@ -128,6 +132,7 @@ users.update("Dave" => {
   }
 }
 )
+#Another (better) way for this is to create a var to hold the hash and then add that to the existing hash
 
 p users
 
